@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="../css/style.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="center">
+          <h1>Programação Web II - Pedido de compra - By Anderson Macedo</h1>
+          <a href="../index.php">Voltar</a>
+        </div>
+    </header>
+
+    <h1>Cadastro de Cliente</h1>
+    <br>
+
+    <form method="POST" action="verifica-cliente.php">
+        <pre>
+        Insira as informações para efetuar o cadastro e deixe seu comentário.
+
+        Nome: <input type="text" maxlength="256" name="nome">
+        Login: <input type="text" maxlength="256" name="login">
+        Senha: <input type="text" maxlength="256" name="senha">
+        Data de Nascimento: <input type="date" maxlength="256" name="dtnasc">
+        Endereço: <input type="text" maxlength="256" name="endereco">
+        <fieldset><legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="1" checked/>
+            <label for="masc">Masculino</label><br/>
+            <input type="radio" name="sexo" id="fem" value="2"/>
+            <label for="fem">Feminino</label>
+        </fieldset><br/>
+        CPF: <input type="text" maxlength="20" name="cpf">
+        RG: <input type="text" maxlength="20" name="rg">
+        Telefone: <input type="text" maxlength="20" name="telefone">
+        Celular: <input type="text" maxlength="20" name="celular">
+
+        <input type="submit" value="Gravad Dados" name="enviar">
+    </pre>
+    </form>
+</body>
+
+</html>
